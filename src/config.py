@@ -38,4 +38,7 @@ GENERATION_MAX_TOKENS = 512
 MEMORY_BUFFER_LIMIT = 20
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-  # Replace with your actual OpenAI API key
+# Replace with your actual OpenAI API key
+
+# Internal service token (used by master service to authenticate requests to this service)
+INTERNAL_SERVICE_TOKEN: str | None = os.getenv("INTERNAL_SERVICE_TOKEN")
